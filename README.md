@@ -1,1 +1,12 @@
 # Carbon-nanotube_AFM_Image_Analysis-Height-Junctions-Segments
+
+Carbon-nanotube_AFM_Image_Analysis: Height distribution, Junctions & Segments
+This open-source repository provides a complete analytical framework for studying carbon-nanotube (CNT) thin films using atomic force microscopy (AFM) data. It includes two complementary Python programs: one for height distribution analysis and another for network density quantification. Together, they enable detailed structural and statistical evaluation of CNT networks.
+
+The height distribution analysis module processes .xyz files exported from AFM scans. It constructs detailed histograms of surface height data and applies Gaussian curve fitting to identify distinct topographical features corresponding to individual CNTs, junctions, and bundles. The fitted models yield quantitative information on relative peak intensities and height modes, providing insight into film morphology, structure, and bundling behaviour.
+
+The network density analysis module operates on AFM images pre-processed in Gwyddion or equivalent software. It performs binary thresholding, skeletonization, and endpoint-branch pruning to obtain a clean one-pixel-wide CNT network skeleton. The code detects junction points, isolates effective CNT segments (regions between two junctions), and excludes isolated or short segments. Using known physical image dimensions, it calculates junction density, segment density, and mean segment length in physical units (µm² and nm). All statistics, parameters, and segment data are exported to Excel for reproducibility and cross-film comparison.
+
+These tools provide a robust framework for quantitative analysis of CNT network morphology, allowing structural features such as junction density and segment length to be correlated with macroscopic properties like electrical transport, mechanical strength, and percolation behaviour. Each script is fully modular, built on open-source libraries (numpy, opencv, matplotlib, scikit-image, scipy, pandas), and generates publication-ready visualizations.
+
+While developed for carbon-nanotube thin films, the method is adaptable to various nanomaterial systems and image analysis tasks that require identifying and quantifying network junctions and segments. This repository is intended for researchers in nanomaterials, condensed matter physics, and electronic device fabrication, offering a transparent, reproducible, and customizable workflow for CNT thin-film AFM data analysis and related networked nanostructures.
