@@ -1,4 +1,6 @@
 # Carbon-nanotube_AFM_Image_Analysis-Height-Junctions-Segments
+# 
+# For the main project context and methodological application of this code, please refer to: Begzaad, S., Happe, E. D., Gouws, G., & Plank, N. (2026). AFM Analysis of Morphology–Density–Transport Relationships in Carbon Nanotube Thin Films. Nanotechnology. DOI 10.1088/1361-6528/ae772c
 
 Carbon-nanotube_AFM_Image_Analysis: Height distribution, Junctions & Segments
 This open-source repository provides a complete analytical framework for studying carbon-nanotube (CNT) thin films using atomic force microscopy (AFM) data. It includes two complementary Python programs: one for height distribution analysis and another for network density quantification. Together, they enable detailed structural and statistical evaluation of CNT networks.
